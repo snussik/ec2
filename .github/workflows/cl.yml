@@ -45,6 +45,8 @@ jobs:
     steps:
       - name: Hello World
         run: echo 'Hello World!'
+      - name: Create dir
+        run: mkdir privet
   stop-runner:
     name: Stop self-hosted EC2 runner
     runs-on: ubuntu-latest
