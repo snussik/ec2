@@ -50,7 +50,7 @@ jobs:
         with:
           node-version: 12.18.2
       - name: Init MPM
-        run: npm init
+        run: npm init -y
   stop-runner:
     name: Stop self-hosted EC2 runner
     runs-on: ubuntu-latest
