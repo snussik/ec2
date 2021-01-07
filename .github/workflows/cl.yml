@@ -51,6 +51,8 @@ jobs:
           node-version: 12.18.2
       - name: Init MPM
         run: npm init -y
+      - name: Install Material UI Core
+        run: npm install @material-ui/core
   stop-runner:
     name: Stop self-hosted EC2 runner
     runs-on: ubuntu-latest
