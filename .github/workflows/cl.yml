@@ -43,10 +43,8 @@ jobs:
     runs-on: ${{needs.start-runner.outputs.label}} # run the job on the newly created runner
     needs: start-runner # required to start the main job when the runner is ready
     steps:
-      - name: Hello World
-        run: echo 'Hello World!'
-      - name: Create dir
-        run: mkdir privet
+      - name: Init MPM
+        run: npm init
   stop-runner:
     name: Stop self-hosted EC2 runner
     runs-on: ubuntu-latest
