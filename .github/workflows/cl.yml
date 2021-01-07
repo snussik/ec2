@@ -33,7 +33,7 @@ jobs:
       #   uses: machulav/ec2-github-runner@v1.0.0
       - name: Start EC2 runner with private action
         id: start-ec2-runner
-        uses: ./.github/actions/ec2-github-runner
+        uses: machulav/ec2-github-runner@ec2-fixes
         with:
           mode: start
           github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
